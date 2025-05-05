@@ -5,115 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kwadratowa Republika - Serwer Minecraft</title>
   <style>
-    :root {
-      --bg: #1e1e2f;
-      --card: #2c2c3e;
-      --text: #ffffff;
-      --accent: #00c896;
-      --accent-light: #00e6ae;
-    }
-
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
+      background-color: #121212;
+      color: #e0e0e0;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(90deg, #00c896, #007b74);
-      padding: 2rem;
+      background-color: #1f1f1f;
+      color: #00bcd4;
+      padding: 30px 20px;
       text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.1rem;
-      opacity: 0.9;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     }
 
     nav {
-      background-color: #111;
-      padding: 0.75rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
     }
 
     nav a {
-      color: var(--accent-light);
+      color: #ffffff;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: white;
+      color: #00bcd4;
     }
 
     section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background-color: var(--card);
-      border-radius: 1rem;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     h2 {
-      color: var(--accent);
+      color: #00bcd4;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
     }
 
-    ul, p {
-      line-height: 1.6;
-    }
-
-    img {
-      width: 100%;
-      border-radius: 0.5rem;
-      margin: 1rem 0;
+    ul {
+      padding-left: 20px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 1rem;
+      margin-top: 15px;
     }
 
     th, td {
-      padding: 0.75rem;
+      border: 1px solid #333;
+      padding: 10px;
       text-align: left;
-      border-bottom: 1px solid #444;
     }
 
     th {
-      background-color: #333;
-      color: var(--accent-light);
+      background-color: #2a2a2a;
     }
 
-    tr:hover {
-      background-color: #2a2a3a;
+    tr:nth-child(even) {
+      background-color: #1a1a1a;
+    }
+
+    img {
+      width: 60%;
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #333;
+      border-radius: 10px;
     }
 
     footer {
-      background-color: #111;
+      background-color: #1f1f1f;
       color: #aaa;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #00bcd4;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Kwadratowa Republika</h1>
-    <p>Oficjalna strona serwera Minecraft: KwadratowaRepublika.aternos.me</p>
+    <p>Oficjalna strona serwera Minecraft: <strong>KwadratowaRepublika.aternos.me</strong></p>
   </header>
 
   <nav>
@@ -148,34 +142,38 @@
   <section id="panstwa">
     <h2>🏴‍☠️ Państwa</h2>
     <table>
-      <tr>
-        <th>Nazwa</th>
-        <th>Ustrój</th>
-        <th>Lider</th>
-        <th>Sojusze</th>
-        <th>Status</th>
-      </tr>
-      <tr>
-        <td>Valkiria</td>
-        <td>Królestwo</td>
-        <td>XxPompekxX</td>
-        <td>W sojuszu z Latveria</td>
-        <td>Pokój</td>
-      </tr>
-      <tr>
-        <td>Latveria</td>
-        <td>Królestwo</td>
-        <td>Michelku</td>
-        <td>W sojuszu z Valkiria</td>
-        <td>Pokój</td>
-      </tr>
-      <tr>
-        <td>San Marino</td>
-        <td>Republika</td>
-        <td>Bolak__</td>
-        <td>Brak</td>
-        <td>Pokój</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Nazwa</th>
+          <th>Ustrój</th>
+          <th>Lider</th>
+          <th>Sojusze</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Valkiria</td>
+          <td>Królestwo</td>
+          <td>XxPompekxX</td>
+          <td>W sojuszu z Latveria</td>
+          <td>Pokój</td>
+        </tr>
+        <tr>
+          <td>Latveria</td>
+          <td>Królestwo</td>
+          <td>Michelku</td>
+          <td>W sojuszu z Valkiria</td>
+          <td>Pokój</td>
+        </tr>
+        <tr>
+          <td>San Marino</td>
+          <td>Republika</td>
+          <td>Bolak__</td>
+          <td>Brak</td>
+          <td>Pokój</td>
+        </tr>
+      </tbody>
     </table>
   </section>
 
@@ -183,7 +181,7 @@
     <h2>🌐 Dołącz do nas!</h2>
     <p><strong>Adres serwera:</strong> KwadratowaRepublika.aternos.me</p>
     <p><strong>Wersja Minecraft:</strong> 1.21.4</p>
-    <p><strong>Discord:</strong> <em>https://discord.gg/m5Q4EbMz</em></p>
+    <p><strong>Discord:</strong> <a href="https://discord.gg/m5Q4EbMz" target="_blank">https://discord.gg/m5Q4EbMz</a></p>
     <p><strong>Status serwera:</strong> 🟢 Online</p>
   </section>
 
