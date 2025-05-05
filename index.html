@@ -5,52 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kwadratowa Republika - Serwer Minecraft</title>
   <style>
+    :root {
+      --bg: #1e1e2f;
+      --card: #2c2c3e;
+      --text: #ffffff;
+      --accent: #00c896;
+      --accent-light: #00e6ae;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
       margin: 0;
       padding: 0;
     }
+
     header {
-      background-color: #3c8dbc;
-      color: white;
-      padding: 20px;
+      background: linear-gradient(90deg, #00c896, #007b74);
+      padding: 2rem;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
     nav {
-      background-color: #2c3e50;
-      padding: 10px;
-      text-align: center;
+      background-color: #111;
+      padding: 0.75rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
     }
+
     nav a {
-      color: white;
-      margin: 0 15px;
+      color: var(--accent-light);
       text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      color: white;
+    }
+
     section {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-      background-color: white;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: var(--card);
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
+
     h2 {
-      color: #3c8dbc;
+      color: var(--accent);
     }
+
+    ul, p {
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 0.5rem;
+      margin: 1rem 0;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
+      margin-top: 1rem;
     }
+
     th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
+      padding: 0.75rem;
       text-align: left;
+      border-bottom: 1px solid #444;
     }
+
+    th {
+      background-color: #333;
+      color: var(--accent-light);
+    }
+
+    tr:hover {
+      background-color: #2a2a3a;
+    }
+
     footer {
-      background-color: #2c3e50;
-      color: white;
+      background-color: #111;
+      color: #aaa;
       text-align: center;
-      padding: 10px;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -80,7 +136,7 @@
 
   <section id="mapa">
     <h2>🗺️ Mapa Świata</h2>
-    <img src="mapa.png" alt="Mapa Kwadratowa Republika" style="width: 70%; display: block; margin: auto;" />
+    <img src="mapa.png" alt="Mapa Kwadratowa Republika" />
     <p>Powyżej znajduje się aktualna mapa świata Kwadratowej Republiki z oznaczonymi granicami państw:</p>
     <ul>
       <li><strong>San Marino</strong> (żółty obszar)</li>
